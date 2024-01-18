@@ -9,6 +9,9 @@ const App = () => {
   const t2 = t.concat(5)
 
   const m1 = t.map(value => value * 2)
+  const m2 = t.map(value => '<li>' + value + '<li>')
+
+  console.log("Elemento m2", m2)
 
   console.log("Elementos t", t)
   console.log("Elementos t2", t2)
@@ -19,6 +22,7 @@ const App = () => {
   console.log("Longitud t", t.length)
   console.log("Longitud t2", t2.length)
   console.log("Longitud m1", m1.length)
+  console.log("Longitud m2", m2.length)
   //console.log(t[1])     // se imprime -1
 
   t.forEach(value => {
