@@ -8,13 +8,17 @@ const App = () => {
 
   const t2 = t.concat(5)
 
-  console.log("Elementos array t", t)
-  console.log("Elementos array t2", t2)
+  const m1 = t.map(value => value * 2)
+
+  console.log("Elementos t", t)
+  console.log("Elementos t2", t2)
+  console.log("Elementos m1", m1)
 
   //t.push(5)
 
-  console.log("Longitud t", t.length) // se imprime 4
-  console.log("longitud t2", t2.length)
+  console.log("Longitud t", t.length)
+  console.log("Longitud t2", t2.length)
+  console.log("Longitud m1", m1.length)
   //console.log(t[1])     // se imprime -1
 
   t.forEach(value => {
