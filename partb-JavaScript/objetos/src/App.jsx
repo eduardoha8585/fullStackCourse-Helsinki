@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <>
-      Revisar la consola del navegador ctrl+shift+i
+      Revisar la consola del navegador ctrl+shift+i para ver la impresion de los objetos
     </>
   )
 }
