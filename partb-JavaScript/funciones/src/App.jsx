@@ -24,6 +24,7 @@ const App = () => {
   console.log(result)
   square(10)
   console.log(square2(10))
+  
   return <>resultado {result}</>
 
   
