@@ -4,30 +4,30 @@ import viteLogo from '/vite.svg'
 
 
 const App = () => {
-  const [count, setCount] = useState(0)
+
+  const object1 = {
+    name: 'Miguel Eduardo Guerrero Ibarra',
+    age: 38,
+    educacion: 'Magister',
+  }
+
+  const object2 = {
+    name: {
+      first: 'Amparo de Jesus',
+      last: 'Ibarra Izquierdo',
+    },
+    hijos: [1, 2, 3],
+    parent: 'Madre',
+
+  }
+
+  console.log('Objeto 1', object1)
+  console.log('Objeto 2', object2)
+  console.log('Nombre completo', object2.name.first + ' '+ object2.name.last)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      Revisar la consola del navegador ctrl+shift+i
     </>
   )
 }
