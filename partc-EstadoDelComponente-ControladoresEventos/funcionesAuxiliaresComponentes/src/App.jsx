@@ -4,11 +4,21 @@ import viteLogo from '/vite.svg'
 import './App'
 
 const Hello = (props) => {
-  return (
+  //funcion auxiliar definida dentro de otra función que define el comportamiento de nuestro componente
+  const bornYear = () => {
+    const yearNow = new Date().getFullYear()
+    return yearNow - props.age
+  }
+
+  return(
     <div>
-      <p>Hello {props.name}, you are {props.age} years old</p>
+      <p>
+        Hello {props.name}, you are {props.age} years old
+      </p>
+      <p>So you were probably born in {bornYear()}</p>
     </div>
   )
+
 }
 
 const App = () => {
