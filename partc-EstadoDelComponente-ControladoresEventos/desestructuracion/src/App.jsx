@@ -64,7 +64,7 @@ const Hello3 = ({name, age}) => {
   )
 }
 
-//Componente con desestructuración en la asignación
+//Componente con asignacion por desestructuración
 const Hello4 = (props) => {
   
   const {name, age} = props
