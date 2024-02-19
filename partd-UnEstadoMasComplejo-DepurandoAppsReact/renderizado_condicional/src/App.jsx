@@ -40,6 +40,8 @@ const App = () => {
     setRight(right + 1)
   }
 
+  
+
   return (
       <div>
         {left}
