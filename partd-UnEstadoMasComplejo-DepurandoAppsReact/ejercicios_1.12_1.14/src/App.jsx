@@ -26,8 +26,11 @@ const App = () => {
     setVotos(newVotos)
   }
 
+  const mayorVotacion = Math.max(...votos)
+  debugger
   return (
     <div>
+      <h1>Anecdote of the day</h1>
       {anecdotes[selected]}
       <p>
         has {votos[selected]} votes
@@ -36,7 +39,11 @@ const App = () => {
         <button onClick={() => sVotos(selected)}>vote</button>
         <button onClick={selecteds}>next anecdote</button>
       </p>
-      
+      <p>
+        <h1>Anecdote with most votes</h1>
+        {anecdotes[votos.indexOf(mayorVotacion)]}
+      </p>
+      has {mayorVotacion} votes
     </div>
   )
 }
