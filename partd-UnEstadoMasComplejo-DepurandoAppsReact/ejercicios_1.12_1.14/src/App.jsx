@@ -13,21 +13,21 @@ const App = () => {
   ]
 
   const [selected, setSelected] = useState(0)
-  const [votos, setVotos] = useState([0,0,0,0,0,0,0,0,0,0])
+  const [votos, setVotos] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
-  
-  const selecteds = () =>{
-    setSelected((selected - selected) + Math.floor(Math.random()*8))
+
+  const selecteds = () => {
+    setSelected((selected - selected) + Math.floor(Math.random() * 8))
   }
 
-  const sVotos = (anecdota) =>{
+  const sVotos = (anecdota) => {
     const newVotos = [...votos]
     newVotos[anecdota] += 1
     setVotos(newVotos)
   }
 
   const mayorVotacion = Math.max(...votos)
-  debugger
+  //debugger
   return (
     <div>
       <h1>Anecdote of the day</h1>
